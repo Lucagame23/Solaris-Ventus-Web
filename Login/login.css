@@ -1,0 +1,172 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+header {
+    background-color: #000000;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Contenedor del formulario de inicio de sesión */
+.login-container {
+    background-color: #1c1c1c;
+    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-container h2 {
+    margin-top: 0;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.remember input {
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    background-color: #444444;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #666666;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+}
+
+.google-login,
+.github-login {
+    background-color: #444444;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.google-login:hover,
+.github-login:hover {
+    background-color: #666666;
+}
+
+.register {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Sección de bienvenida */
+.welcome {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.welcome h1 {
+    font-size: 3em;
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* Estilos para la imagen circular */
+.navbar-image {
+    width: 40px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 40px;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga del círculo */
+    margin-right: 10px; /* Espacio a la derecha de la imagen */
+}
+
+/* Estilos para el navbar */
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #333; /* Color de fondo del navbar */
+    padding: 10px 20px; /* Espaciado interior del navbar */
+}
+
+nav ul {
+    list-style-type: none; /* Quita los puntos de lista */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Espaciado entre elementos del navbar */
+}
+
+nav ul li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: white; /* Color del texto de los enlaces */
+}
