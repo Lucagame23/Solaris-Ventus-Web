@@ -15,13 +15,36 @@ header {
 
 nav {
     display: flex;
+    justify-content: space-between; /* Asegura que los elementos estén en los extremos */
     align-items: center;
-    justify-content: space-between; /* Distribuye el espacio entre los elementos */
     background-color: #333; /* Color de fondo del navbar */
     padding: 10px 20px; /* Espaciado interior del navbar */
 }
 
-/* Imagen circular en el navbar */
+nav .navbar-logo {
+    flex: 1; /* La sección del logo toma el espacio restante */
+}
+
+nav ul {
+    list-style-type: none; /* Quita los puntos de lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    flex: 1; /* Los elementos de la lista también toman el espacio restante */
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px; /* Espaciado entre elementos del navbar */
+}
+
+nav ul li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: white; /* Color del texto de los enlaces */
+}
+
+/* Estilos para la imagen circular */
 .navbar-image {
     width: 40px; /* Ajusta el tamaño de la imagen según sea necesario */
     height: 40px;
@@ -30,25 +53,9 @@ nav {
     margin-right: 10px; /* Espacio a la derecha de la imagen */
 }
 
-nav ul {
-    list-style-type: none; /* Quita los puntos de lista */
-    margin: 0;
-    padding: 0;
-    display: flex; /* Usa flexbox para alinear los elementos en fila */
-    justify-content: flex-end; /* Alinea los elementos a la derecha */
-}
-
-nav ul li {
-    margin-left: 20px; /* Espaciado entre elementos del navbar */
-}
-
-nav ul li a {
-    color: #ffffff; /* Color del texto de los enlaces */
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-}
-
-/* Contenedor del formulario de registro */
-.register-container {
+/* Contenedor del formulario de registro y login */
+.register-container,
+.login-container {
     background-color: #1c1c1c;
     padding: 20px;
     max-width: 400px;
@@ -57,18 +64,22 @@ nav ul li a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.register-container h2 {
+.register-container h2,
+.login-container h2 {
     margin-top: 0;
 }
 
-.register-container label {
+.register-container label,
+.login-container label {
     display: block;
     margin-bottom: 5px;
 }
 
 .register-container input[type="text"],
 .register-container input[type="email"],
-.register-container input[type="password"] {
+.register-container input[type="password"],
+.login-container input[type="text"],
+.login-container input[type="password"] {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 10px;
@@ -91,12 +102,14 @@ button[type="submit"]:hover {
     background-color: #666666;
 }
 
-.login {
+.login,
+.register {
     text-align: center;
     margin-top: 20px;
 }
 
-.login a {
+.login a,
+.register a {
     color: #ffffff;
     text-decoration: none;
 }
@@ -110,5 +123,37 @@ button[type="submit"]:hover {
 .welcome h1 {
     font-size: 3em;
     line-height: 1.2;
+    margin: 0;
+}
+
+/* Sección de nosotros */
+#about {
+    text-align: center;
+    margin: 50px auto;
+}
+
+/* Estilos para la imagen de la sección de nosotros */
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para el texto de la sección de nosotros */
+.about-text {
+    background-color: #1c1c1c;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-text h2 {
+    margin-top: 0;
+}
+
+.about-text p {
     margin: 0;
 }
